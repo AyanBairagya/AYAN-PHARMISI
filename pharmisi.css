@@ -1,0 +1,56 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  animation: bgChange 15s ease infinite;
+}
+
+/* Background changing colors */
+@keyframes bgChange {
+  0%   { background-image: url(img/pharmeasy-22.jpg); }
+  50%  { background-image: url(img/PharmEasy-online-pharmacy-startup.jpg); }
+  100% { background-image: url(img/PharmEasy-success-story-608x338.jpg); }
+}
+
+/* Navbar */
+nav {
+  background: #2c3e50;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  color: white;
+  margin: 0;
+}
+nav .links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+nav .links a:hover {
+  background: #1abc9c;
+}
+
+footer {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 520px;
+}
+footer h3 {
+  margin-bottom: 10px;
+}
+footer p {
+  font-size: 14px;
+}
+
+
+
+
