@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pharmacy Products</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+  <header>
+    <h1>Our Products</h1>
+  </header>
+
+  <!-- Form to add new medicine -->
+  <section class="add-product">
+    <h2>Add New Medicine</h2>
+    <form id="productForm">
+      <input type="text" id="name" placeholder="Medicine Name" required>
+      <input type="number" id="price" placeholder="Price (₹)" required>
+      <input type="text" id="quantity" placeholder="Quantity" required>
+      <button type="submit">Add Product</button>
+    </form>
+  </section>
+
+  <!-- Product table -->
+  <table class="product-table">
+    <thead>
+      <tr>
+        <th>Medicine Name</th>
+        <th>Price (₹)</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="productList">
+      <tr>
+        <td>Paracetamol</td>
+        <td>25</td>
+        <td>10 strips</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+ <script src="script.js"></script>
+</body>
+</html>

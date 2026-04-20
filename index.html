@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pharmacy System</title>
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <button onclick="openChoice('user')">User</button>
+    <button onclick="openChoice('admin')">Admin</button>
+</div>
+
+<!-- Choice Popup -->
+<div id="choicePopup" class="popup">
+    <h3 id="choiceTitle"></h3>
+    <button onclick="openSignup()">Signup</button>
+    <button onclick="openLogin()">Login</button>
+    <button class="close" onclick="closePopup()">Close</button>
+</div>
+
+<!-- Signup Popup -->
+<div id="signupPopup" class="popup">
+    <h3 id="signupTitle"></h3>
+    <input type="text" id="signupId" placeholder="User ID">
+    <input type="password" id="signupPass" placeholder="Password">
+    <input type="text" id="pharmacyKey" placeholder="Pharmacy Key (Admin only)" style="display:none;">
+    <button onclick="signup()">Submit</button>
+    <button class="close" onclick="closePopup()">Close</button>
+</div>
+
+<!-- Login Popup -->
+<div id="loginPopup" class="popup">
+    <h3 id="loginTitle"></h3>
+    <input type="text" id="loginId" placeholder="User ID">
+    <input type="password" id="loginPass" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <button class="close" onclick="closePopup()">Close</button>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
